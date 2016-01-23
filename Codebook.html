@@ -190,6 +190,21 @@ img {
 <div id="section-25" class="section level1">
 <h1></h1>
 <p>Code: <code>write.table(tidy_data, file = &quot;tidy.txt&quot;, row.names = FALSE)</code></p>
+<div id="complete-list-of-features-from-features_info.txt" class="section level2">
+<h2>Complete list of features from features_info.txt</h2>
+</div>
+</div>
+<div id="feature-selection" class="section level1">
+<h1>Feature Selection</h1>
+<p>The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix ‘t’ to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz.</p>
+<p>Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag).</p>
+<p>Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag. (Note the ‘f’ to indicate frequency domain signals).</p>
+<p>These signals were used to estimate variables of the feature vector for each pattern:<br />‘-XYZ’ is used to denote 3-axial signals in the X, Y and Z directions.</p>
+<p><code>tBodyAcc-XYZ</code> <code>tGravityAcc-XYZ</code> <code>tBodyAccJerk-XYZ</code> <code>tBodyGyro-XYZ</code> <code>tBodyGyroJerk-XYZ</code> <code>tBodyAccMag</code> <code>tGravityAccMag</code> <code>tBodyAccJerkMag</code> <code>tBodyGyroMag</code> <code>tBodyGyroJerkMag</code> <code>fBodyAcc-XYZ</code> <code>fBodyAccJerk-XYZ</code> <code>fBodyGyro-XYZ</code> <code>fBodyAccMag</code> <code>fBodyAccJerkMag</code> <code>fBodyGyroMag</code> <code>fBodyGyroJerkMag</code></p>
+<p>The set of variables that were estimated from these signals are:</p>
+<p><code>mean(): Mean value</code> <code>std(): Standard deviation</code> <code>mad(): Median absolute deviation</code> <code>max(): Largest value in array</code> <code>min(): Smallest value in array</code> <code>sma(): Signal magnitude area</code> <code>energy(): Energy measure. Sum of the squares divided by the number of values.</code> <code>iqr(): Interquartile range</code> <code>entropy(): Signal entropy</code> <code>arCoeff(): Autorregresion coefficients with Burg order equal to 4</code> <code>correlation(): correlation coefficient between two signals</code> <code>maxInds(): index of the frequency component with largest magnitude</code> <code>meanFreq(): Weighted average of the frequency components to obtain a mean frequency</code> <code>skewness(): skewness of the frequency domain signal</code> <code>kurtosis(): kurtosis of the frequency domain signal</code> <code>bandsEnergy(): Energy of a frequency interval within the 64 bins of the FFT of each window.</code> <code>angle(): Angle between to vectors.</code></p>
+<p>Additional vectors obtained by averaging the signals in a signal window sample. These are used on the angle() variable:</p>
+<p><code>gravityMean</code> <code>tBodyAccMean</code> <code>tBodyAccJerkMean</code> <code>tBodyGyroMean</code> <code>tBodyGyroJerkMean</code></p>
 </div>
 
 
